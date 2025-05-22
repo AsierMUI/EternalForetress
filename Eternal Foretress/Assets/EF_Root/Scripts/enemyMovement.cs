@@ -9,6 +9,7 @@ public class enemyMovement : MonoBehaviour
     public List<Transform> waypoints = new List<Transform>();
     private int targetIndex = 1;
     public float movementSpeed = 4;
+    public float rotationSpeed = 6;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,10 @@ public class enemyMovement : MonoBehaviour
 
     private void LookAt()
     {
-        transform.LookAt(waypoints[targetIndex]);
+        //transform.LookAt(waypoints[targetIndex]);
+        var dir = waypoints[targetIndex].position - transform.position;
+        var rootTarget = Quaternion.LookRotation(dir);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rootTarget, rotationSpeed * Time.deltaTime);
     }
 
 }
