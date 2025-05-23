@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7614304953127690208}
   - component: {fileID: 2247446196428307354}
   m_Layer: 0
-  m_Name: FastasmaVerde
+  m_Name: FantasmaVerde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
