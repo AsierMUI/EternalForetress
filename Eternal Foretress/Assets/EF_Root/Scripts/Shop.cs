@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    BuildManager buildManager;
+
+    private void Start()
+    {
+        buildManager = BuildManager.instance;
+    }
+
     public void PurchaseStandarTurret()
     {
-        Debug.Log("Standar Turret Purchased");
+        Debug.Log("Standard Turret Purchased");
+        buildManager.SetTurretToBuild(buildManager.standardTurretPrefab);
     }
 
     public void PurchaseDemonTurret()
     {
         Debug.Log("Demon Turret Purchased");
+        buildManager.SetTurretToBuild(buildManager.demonTurretPrefab);
     }
 
 }
