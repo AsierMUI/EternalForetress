@@ -2105,7 +2105,7 @@ GameObject:
   - component: {fileID: 428399569}
   - component: {fileID: 428399568}
   m_Layer: 5
-  m_Name: ShopTurretItem
+  m_Name: ShopDemon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2194,7 +2194,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 428399570}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1771730361}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: PurchaseDemonTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &428399570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6385,7 +6397,7 @@ GameObject:
   - component: {fileID: 1629035716}
   - component: {fileID: 1629035715}
   m_Layer: 5
-  m_Name: ShopTurretItem (1)
+  m_Name: ShopStandar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6474,7 +6486,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1629035717}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1771730361}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: PurchaseStandarTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1629035717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6683,6 +6707,7 @@ GameObject:
   - component: {fileID: 1771730360}
   - component: {fileID: 1771730359}
   - component: {fileID: 1771730358}
+  - component: {fileID: 1771730361}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -6775,6 +6800,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771730356}
   m_CullTransparentMesh: 1
+--- !u!114 &1771730361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771730356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01825c6ed63205e45a6676d66c3b8df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1794001199
 PrefabInstance:
   m_ObjectHideFlags: 0
