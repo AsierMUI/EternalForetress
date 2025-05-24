@@ -6,21 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public Button exitButton;
-    public Button resetButton;
-    public string menu;
-    public string mapa;
-
-    void Start()
+    public void SceneLoader(int sceneToLoad)
     {
-        
-        exitButton.onClick.AddListener(() => ChangeScene(menu));
-        resetButton.onClick.AddListener(() => ChangeScene(mapa));
+        SceneManager.LoadScene(sceneToLoad);
     }
 
-    void ChangeScene(string sceneName)
+    public void ExitGame()
     {
-        
-        SceneManager.LoadScene(sceneName);
+        Application.Quit();
     }
 }
