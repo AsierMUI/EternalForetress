@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
     public float range = 15f;
 
     public string enemyTag = "Enemy";
-
+    public Transform partToRotate;
+    public float turnSpeed = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,21 +19,25 @@ public class Turret : MonoBehaviour
     void UpdateTarget()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
-        float shortesDistance = Mathf.Infinity;
+        float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
         foreach (GameObject enemy in enemies)
         {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < shortesDistance)
+            if (distanceToEnemy < shortestDistance)
             {
-                shortesDistance = distanceToEnemy;
+                shortestDistance = distanceToEnemy;
                 nearestEnemy = enemy;
             }
         }
 
-        if (nearestEnemy != null && shortesDistance <= range)
+        if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
+        }
+        else
+        {
+            target = null;
         }
     }
 
@@ -42,6 +47,10 @@ public class Turret : MonoBehaviour
         if (target == null)
             return;
 
+        Vector3 dir = target.position - transform.position;
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
+        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f); ;
 
     }
 

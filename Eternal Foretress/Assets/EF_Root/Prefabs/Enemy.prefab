@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7614304953127690208}
   - component: {fileID: 2247446196428307354}
   m_Layer: 0
-  m_Name: FantasmaVerde
-  m_TagString: Untagged
+  m_Name: Enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,3 +109,4 @@ MonoBehaviour:
   - {fileID: 0}
   movementSpeed: 4
   rotationSpeed: 6
+  health: 100
