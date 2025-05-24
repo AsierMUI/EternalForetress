@@ -42,7 +42,11 @@ public class Node : MonoBehaviour
 
     void OnMouseEnter()
     {
-       rend.material.color = hoverColor;
+        if (buildManager.GetTurretToBuild() == null)
+        {  return; }
+        
+
+        rend.material.color = hoverColor;
     }
 
     private void OnMouseExit()
