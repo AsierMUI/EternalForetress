@@ -6,10 +6,10 @@ using UnityEngine.Rendering;
 public class enemyMovement : MonoBehaviour
 {
     public List<Transform> waypoints = new List<Transform>();
-    private int targetIndex = 0; // Comienza desde el primer waypoint
+    private int targetIndex = 0; 
     public float movementSpeed = 4;
     public float rotationSpeed = 6;
-    public int health = 100; // Puntos de vida del enemigo
+    public int health = 100; 
 
     private void Awake()
     {
@@ -24,7 +24,7 @@ public class enemyMovement : MonoBehaviour
 
     private void Movement()
     {
-        if (targetIndex >= waypoints.Count) return; // Verifica si ha llegado al último waypoint
+        if (targetIndex >= waypoints.Count) return; 
 
         transform.position = Vector3.MoveTowards(transform.position, waypoints[targetIndex].position, movementSpeed * Time.deltaTime);
         var distance = Vector3.Distance(transform.position, waypoints[targetIndex].position);
@@ -33,17 +33,17 @@ public class enemyMovement : MonoBehaviour
             targetIndex++;
             if (targetIndex >= waypoints.Count)
             {
-                Destroy(gameObject); // Destruye el enemigo al llegar al último waypoint
+                Destroy(gameObject); 
             }
         }
     }
 
     private void LookAt()
     {
-        if (targetIndex < waypoints.Count) // Asegúrate de que hay waypoints
+        if (targetIndex < waypoints.Count) 
         {
             var dir = waypoints[targetIndex].position - transform.position;
-            if (dir != Vector3.zero) // Verifica que la dirección no sea cero
+            if (dir != Vector3.zero) 
             {
                 var rootTarget = Quaternion.LookRotation(dir);
                 transform.rotation = Quaternion.Slerp(transform.rotation, rootTarget, rotationSpeed * Time.deltaTime);
@@ -51,29 +51,11 @@ public class enemyMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Bullet"))
-        {
-            TakeDamage(10); // Reduce la salud en 10 (ajusta según sea necesario)
-            Destroy(other.gameObject); // Destruye la bala
-        }
-    }
-
-    private void TakeDamage(int damage)
-    {
-        health -= damage;
-        if (health <= 0)
-        {
-            Destroy(gameObject); // Destruye el enemigo
-        }
-    }
-
     private void GetWaypoints()
     {
         waypoints.Clear();
         var rootWaypoint = GameObject.Find("WaypointsContainer").transform;
-        for (int i = 0; i < rootWaypoint.childCount; i++) // Cambiado a rootWaypoint
+        for (int i = 0; i < rootWaypoint.childCount; i++) 
         {
             waypoints.Add(rootWaypoint.GetChild(i));
         }
