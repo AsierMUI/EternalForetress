@@ -9,6 +9,8 @@ public class Bullet : MonoBehaviour
     public int damage = 50;
     public GameObject impactEffect;
 
+    public int worth = 50;
+
     public void Seek (Transform _target)
     {
         target = _target;
@@ -38,10 +40,16 @@ public class Bullet : MonoBehaviour
 
     void HitTarget ()
     {
+       
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 1f);
 
-        Destroy(target.gameObject);
+        if (target.CompareTag("Enemy"))
+        {
+            PlayerStats.AddMoney(worth);
+            Destroy(target.gameObject);
+        }
+        
 
         Destroy(gameObject);
     }

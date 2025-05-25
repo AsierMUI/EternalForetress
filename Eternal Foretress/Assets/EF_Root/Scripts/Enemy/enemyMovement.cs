@@ -8,6 +8,8 @@ public class enemyMovement : MonoBehaviour
     private int targetIndex = 0; 
     public float movementSpeed = 4;
     public float rotationSpeed = 6;
+
+    
     
 
     private void Awake()
@@ -33,6 +35,7 @@ public class enemyMovement : MonoBehaviour
             if (targetIndex >= waypoints.Count)
             {
                 PlayerStats.Lives--;
+                
                 Destroy(gameObject); 
             }
         }

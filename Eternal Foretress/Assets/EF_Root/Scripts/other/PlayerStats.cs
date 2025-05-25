@@ -16,5 +16,11 @@ public class PlayerStats : MonoBehaviour
         Lives = startLives;
     }
 
+    public static void AddMoney(int amount)
+    {
+        Money += amount;
+        Debug.Log("Dinero actual:" + Money);
+    }
+
 
 }
