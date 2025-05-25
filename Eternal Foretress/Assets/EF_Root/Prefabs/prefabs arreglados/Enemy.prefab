@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 6524450290888673454}
   - component: {fileID: 924553186195387231}
   - component: {fileID: 7614304953127690208}
-  - component: {fileID: 2247446196428307354}
+  - component: {fileID: 1474638679604917916}
+  - component: {fileID: 6518849396696317520}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -84,7 +85,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2247446196428307354
+--- !u!114 &1474638679604917916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,20 +94,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 2662718320441112804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc27111d8d929f64bbf4c5f7706207aa, type: 3}
+  m_Script: {fileID: 11500000, guid: 76936849acfb56b4eb7ba6caa7cd0f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  movementSpeed: 4
-  rotationSpeed: 6
+  speed: 10
   health: 100
+--- !u!114 &6518849396696317520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2662718320441112804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ceb3ccfbd898cf49971bf946b9f790b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
