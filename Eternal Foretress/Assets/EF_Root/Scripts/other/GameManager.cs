@@ -1,16 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 
     private bool gameEnded = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    public int sceneToLoad;
 
     // Update is called once per frame
     void Update()
@@ -26,5 +24,7 @@ public class GameManager : MonoBehaviour
     {
         gameEnded = true;
         Debug.Log("Game Over");
+
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
