@@ -2611,6 +2611,7 @@ GameObject:
   - component: {fileID: 413239886}
   - component: {fileID: 413239885}
   - component: {fileID: 413239884}
+  - component: {fileID: 413239888}
   m_Layer: 0
   m_Name: camino (4)
   m_TagString: Untagged
@@ -2704,6 +2705,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &413239888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413239883}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+  m_Center: {x: 0, y: 0.00000023841858, z: 0.000000059604645}
 --- !u!1 &432638030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3178,6 +3200,7 @@ GameObject:
   - component: {fileID: 471774090}
   - component: {fileID: 471774089}
   - component: {fileID: 471774088}
+  - component: {fileID: 471774092}
   m_Layer: 0
   m_Name: camino (1)
   m_TagString: Untagged
@@ -3271,6 +3294,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &471774092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471774087}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_Center: {x: 0.00000011920929, y: 0.00000023841858, z: -0.000000059604645}
 --- !u!1001 &477227027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3991,6 +4035,7 @@ GameObject:
   - component: {fileID: 664259875}
   - component: {fileID: 664259874}
   - component: {fileID: 664259873}
+  - component: {fileID: 664259877}
   m_Layer: 0
   m_Name: camino (6)
   m_TagString: Untagged
@@ -4084,6 +4129,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &664259877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664259872}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_Center: {x: 0, y: 0.00000023841858, z: 0}
 --- !u!1001 &670536976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4185,6 +4251,7 @@ GameObject:
   - component: {fileID: 740326465}
   - component: {fileID: 740326464}
   - component: {fileID: 740326463}
+  - component: {fileID: 740326467}
   m_Layer: 0
   m_Name: camino (3)
   m_TagString: Untagged
@@ -4278,6 +4345,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &740326467
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740326462}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_Center: {x: 0.000000059604645, y: 0.00000023841858, z: -0.000000059604645}
 --- !u!1001 &745447963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5286,6 +5374,7 @@ GameObject:
   - component: {fileID: 871430222}
   - component: {fileID: 871430221}
   - component: {fileID: 871430220}
+  - component: {fileID: 871430224}
   m_Layer: 0
   m_Name: camino (5)
   m_TagString: Untagged
@@ -5379,6 +5468,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &871430224
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871430219}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_Center: {x: -0.000000007450581, y: 0.00000023841858, z: 0}
 --- !u!1001 &921518720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5862,6 +5972,7 @@ GameObject:
   - component: {fileID: 940163568}
   - component: {fileID: 940163567}
   - component: {fileID: 940163566}
+  - component: {fileID: 940163570}
   m_Layer: 0
   m_Name: camino (7)
   m_TagString: Untagged
@@ -5955,6 +6066,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &940163570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940163565}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+  m_Center: {x: 0, y: 0.00000023841858, z: -0.00000023841858}
 --- !u!1001 &947607190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7388,6 +7520,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1251221286}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1264414722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3178676512902824803, guid: ffe1f333757eacc47b3084f4233967b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4012200820827330870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1273557363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7510,6 +7648,7 @@ GameObject:
   - component: {fileID: 1365731403}
   - component: {fileID: 1365731402}
   - component: {fileID: 1365731401}
+  - component: {fileID: 1365731405}
   m_Layer: 0
   m_Name: camino (8)
   m_TagString: Untagged
@@ -7603,6 +7742,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1365731405
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365731400}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_Center: {x: -0.00000011920929, y: 0.00000023841858, z: -0.000000059604645}
 --- !u!1 &1395371317
 GameObject:
   m_ObjectHideFlags: 0
@@ -8031,6 +8191,7 @@ GameObject:
   - component: {fileID: 1512367068}
   - component: {fileID: 1512367067}
   - component: {fileID: 1512367066}
+  - component: {fileID: 1512367070}
   m_Layer: 0
   m_Name: camino (9)
   m_TagString: Untagged
@@ -8124,6 +8285,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &1512367070
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512367065}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+  m_Center: {x: 0, y: 0.00000023841858, z: -0.0000009536743}
 --- !u!1001 &1514348750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8314,6 +8496,7 @@ GameObject:
   - component: {fileID: 1529880417}
   - component: {fileID: 1529880416}
   - component: {fileID: 1529880415}
+  - component: {fileID: 1529880419}
   m_Layer: 0
   m_Name: camino
   m_TagString: Untagged
@@ -8407,6 +8590,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1529880419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529880414}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.0000001, z: 1}
+  m_Center: {x: -0.000000007450581, y: 0.00000023841858, z: 0.00000047683716}
 --- !u!1001 &1551012030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9348,6 +9552,7 @@ GameObject:
   - component: {fileID: 1874231366}
   - component: {fileID: 1874231365}
   - component: {fileID: 1874231364}
+  - component: {fileID: 1874231368}
   m_Layer: 0
   m_Name: camino (10)
   m_TagString: Untagged
@@ -9441,6 +9646,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1874231368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874231363}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_Center: {x: -0.000000007450581, y: 0.00000023841858, z: -0.00000023841858}
 --- !u!1001 &1918139768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10080,6 +10306,7 @@ GameObject:
   - component: {fileID: 1985068391}
   - component: {fileID: 1985068390}
   - component: {fileID: 1985068389}
+  - component: {fileID: 1985068393}
   m_Layer: 0
   m_Name: camino (2)
   m_TagString: Untagged
@@ -10173,6 +10400,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844827957}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &1985068393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985068388}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+  m_Center: {x: 0, y: 0.00000023841858, z: 0.00000047683716}
 --- !u!1001 &1992596396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10966,7 +11214,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3178676512902824803, guid: ffe1f333757eacc47b3084f4233967b2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4012200820827330874}
   m_SourcePrefab: {fileID: 100100000, guid: ffe1f333757eacc47b3084f4233967b2, type: 3}
 --- !u!4 &4012200820827330871 stripped
 Transform:
@@ -10974,6 +11226,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4012200820827330870}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &4012200820827330874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264414722}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.39999998, y: 0.40000013, z: 5.6843415e-15}
+  m_Center: {x: 0, y: 0.0000000018626451, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
