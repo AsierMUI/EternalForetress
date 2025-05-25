@@ -9,7 +9,7 @@ public class enemyMovement : MonoBehaviour
     private int targetIndex = 0; 
     public float movementSpeed = 4;
     public float rotationSpeed = 6;
-    public int health = 100; 
+    
 
     private void Awake()
     {
