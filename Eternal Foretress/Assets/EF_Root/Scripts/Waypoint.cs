@@ -7,7 +7,7 @@ public class Waypoint : MonoBehaviour
 
     public static Transform[] points;
 
-    void Awakw ()
+    void Awake ()
     {
         points = new Transform[transform.childCount];
         for (int i = 0; 1 < points.Length; i++)
@@ -15,15 +15,5 @@ public class Waypoint : MonoBehaviour
             points[i] = transform.GetChild(i);
         }
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
