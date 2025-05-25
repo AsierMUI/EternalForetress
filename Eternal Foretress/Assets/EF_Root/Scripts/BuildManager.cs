@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class BuildManager : MonoBehaviour
 {
@@ -20,14 +21,19 @@ public class BuildManager : MonoBehaviour
 
     
 
-    private GameObject turretToBuild;
+    private turretBlueprint turretToBuild;
 
-    public GameObject GetTurretToBuild()
+    public bool CanBuild { get { return turretToBuild != null; } }
+
+
+    public void BuildTurretOn(Node node)
     {
-        return turretToBuild;
+        GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+        node.turret = turret;
     }
 
-    public void SetTurretToBuild(GameObject turret)
+
+    public void SelectTurretToBuild(turretBlueprint turret)
     {
         turretToBuild = turret;
     }

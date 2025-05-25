@@ -2739,7 +2739,7 @@ GameObject:
   - component: {fileID: 432638033}
   - component: {fileID: 432638032}
   m_Layer: 5
-  m_Name: StandarTurretShop
+  m_Name: StandardTurretShop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2811,7 +2811,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 470350769}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: PurchaseStandarTurret
+        m_MethodName: SelectStandardTurret
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3023,7 +3023,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 470350769}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: PurchaseDemonTurret
+        m_MethodName: SelectDemonTurret
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3188,6 +3188,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01825c6ed63205e45a6676d66c3b8df7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standardTurret:
+    prefab: {fileID: 2763242206562910533, guid: fd8e856c10b75b549ad74b949e1b122e,
+      type: 3}
+    cost: 100
+  demonTurret:
+    prefab: {fileID: 3111964683301744188, guid: bb2e25dc3ac12d543b2c5f1a65c0ed3f,
+      type: 3}
+    cost: 250
 --- !u!1 &471774087
 GameObject:
   m_ObjectHideFlags: 0
