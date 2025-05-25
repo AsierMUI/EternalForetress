@@ -24,12 +24,23 @@ public class BuildManager : MonoBehaviour
     private turretBlueprint turretToBuild;
 
     public bool CanBuild { get { return turretToBuild != null; } }
+    public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
 
 
     public void BuildTurretOn(Node node)
     {
+        if(PlayerStats.Money < turretToBuild.cost)
+        {
+            Debug.Log("sin pasta pa eso");
+            return;
+        }
+
+        PlayerStats.Money -= turretToBuild.cost;
+
         GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
         node.turret = turret;
+
+        Debug.Log("torre comprada, dinero restante:" + PlayerStats.Money);
     }
 
 
